@@ -1,0 +1,28 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My webpage!</title>
+    <link rel="stylesheet" href="styles/styles.css" />  
+
+    <script>
+      var url = new URLSearchParams(window.location.search);
+      monkup = url.get('monkup')
+      degree = url.get('degree')
+      beltorall = url.get('beltorall')
+    </script>
+
+  </head>
+  <body>
+
+    <h1></h1>
+    <button class="button buttonBlue" onclick="location.href='./quiz.html?monkup=' + monkup +'&degree=' + degree +'&beltorall='+beltorall +'&category=All'">Alt </Button><BR>
+    <Button class="button buttonBlue" onclick="location.href='./quiz.html?monkup=' + monkup +'&degree=' + degree +'&beltorall='+beltorall +'&category=Stand'">Kun stande </Button><BR>
+    <Button class="button buttonBlue" onclick="location.href='./quiz.html?monkup=' + monkup +'&degree=' + degree +'&beltorall='+beltorall +'&category=Ben'">Kun benteknikker </Button><BR>
+    <Button class="button buttonBlue" onclick="location.href='./quiz.html?monkup=' + monkup +'&degree=' + degree +'&beltorall='+beltorall +'&category=Hand'">Kun håndteknikker </Button><BR>
+    <Button class="button buttonBlue" onclick="location.href='./quiz.html?monkup=' + monkup +'&degree=' + degree +'&beltorall='+beltorall +'&category=Teori'">Kun teori </Button>
+  </body>
+</html>
+
+

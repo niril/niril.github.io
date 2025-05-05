@@ -1,0 +1,25 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My webpage!</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script async src="./javascript/beltorall.js"></script>
+
+    <script>
+      var url = new URLSearchParams(window.location.search);
+      monkup = url.get('monkup')
+      degree = url.get('degree')
+    </script>
+    
+
+  </head>
+  <body>
+    <h1></h1>
+    <button class="button buttonBlue" onclick="location.href='./catagory.html?monkup=' + monkup +'&degree=' + degree +'&beltorall=Belt'"> Kun bælte </button><br>
+    <button class="button buttonBlue" onclick="location.href='./catagory.html?monkup=' + monkup +'&degree=' + degree +'&beltorall=All'">Bælte og alt under</button>
+  </body>
+</html>
+
+
