@@ -5,6 +5,8 @@ body {
   }
 img {
     height: 50px;
+    margin-top: 1px;
+    margin-bottom: 1px;
   }
 .imgex {
     height: 500px;
