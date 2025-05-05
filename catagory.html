@@ -5,23 +5,26 @@
   <head>
     <title>My webpage!</title>
     <link rel="stylesheet" href="styles/styles.css" />  
+    <script async src="./javascript/general.js"></script>
 
     <script>
       var url = new URLSearchParams(window.location.search);
       monkup = url.get('monkup')
       degree = url.get('degree')
       beltorall = url.get('beltorall')
+      updatebelt()
     </script>
 
   </head>
   <body>
 
     <h1></h1>
+    <img id="quizbelt" src="./assets/images/1kup.png" alt="Kup"> </img><br>
     <button class="button buttonBlue" onclick="location.href='./quiz.html?monkup=' + monkup +'&degree=' + degree +'&beltorall='+beltorall +'&category=All'">Alt </Button><BR>
-    <Button class="button buttonBlue" onclick="location.href='./quiz.html?monkup=' + monkup +'&degree=' + degree +'&beltorall='+beltorall +'&category=Stand'">Kun stande </Button><BR>
-    <Button class="button buttonBlue" onclick="location.href='./quiz.html?monkup=' + monkup +'&degree=' + degree +'&beltorall='+beltorall +'&category=Ben'">Kun benteknikker </Button><BR>
-    <Button class="button buttonBlue" onclick="location.href='./quiz.html?monkup=' + monkup +'&degree=' + degree +'&beltorall='+beltorall +'&category=Hand'">Kun håndteknikker </Button><BR>
-    <Button class="button buttonBlue" onclick="location.href='./quiz.html?monkup=' + monkup +'&degree=' + degree +'&beltorall='+beltorall +'&category=Teori'">Kun teori </Button>
+      <Button class="button buttonBlue" onclick="location.href='./quiz.html?monkup=' + monkup +'&degree=' + degree +'&beltorall='+beltorall +'&category=Stand'">Kun stande </Button><BR>
+      <Button class="button buttonBlue" onclick="location.href='./quiz.html?monkup=' + monkup +'&degree=' + degree +'&beltorall='+beltorall +'&category=Ben'">Kun benteknikker </Button><BR>
+      <Button class="button buttonBlue" onclick="location.href='./quiz.html?monkup=' + monkup +'&degree=' + degree +'&beltorall='+beltorall +'&category=Hand'">Kun håndteknikker </Button><BR>
+      <Button class="button buttonBlue" onclick="location.href='./quiz.html?monkup=' + monkup +'&degree=' + degree +'&beltorall='+beltorall +'&category=Teori'">Kun teori </Button>
   </body>
 </html>
 
