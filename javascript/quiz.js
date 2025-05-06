@@ -270,10 +270,29 @@ for (let i = 0; i < maxstep; i++) {
     }
 
 maxstep = chooseArr.length;
+maxmax = chooseArr.length; 
+
+shuffle(chooseArr)
 if (maxstep == 0) {
   window.location.href = './finish.html?monkup=' + monkup +'&degree=' + degree + '&beltorall=' + BeltOrAll + '&category=' + Catagory;
   } else {
     startNextQ();
+  }
+}
+
+function shuffle(array) {
+  let currentIndex = array.length;
+
+  // While there remain elements to shuffle...
+  while (currentIndex != 0) {
+
+    // Pick a remaining element...
+    let randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex--;
+
+    // And swap it with the current element.
+    [array[currentIndex], array[randomIndex]] = [
+      array[randomIndex], array[currentIndex]];
   }
 }
 
@@ -305,6 +324,8 @@ if (maxstep == 0) {
     document.getElementById('counterText').innerHTML = text
     document.getElementById('iText').innerHTML = step
     document.getElementById('MaxText').innerHTML = maxstep
+    document.getElementById('MaxMaxText').innerHTML = maxmax
+    document.getElementById('LeftText').innerHTML = maxmax-CorrectCounter;
   }
 
   function SvarPress(){
@@ -340,7 +361,7 @@ if (maxstep == 0) {
   function NegPress(){
     if (!question) {
       step = step+1;
-      WrongCounter = WrongCounter++;
+      WrongCounter = WrongCounter+1;
       if (step == maxstep ) {
         step = 0
       }
@@ -353,7 +374,7 @@ if (maxstep == 0) {
     if (!question) {
       chooseArr.splice(step,1);
       maxstep = maxstep-1;
-      CorrectCounter = CorrectCounter++;
+      CorrectCounter = CorrectCounter+1;
       if (maxstep == 0) {
         question = true
         isloaded = true
