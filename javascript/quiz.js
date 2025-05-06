@@ -243,6 +243,7 @@ var step = 0
 var CorrectCounter = 0
 var WrongCounter = 0
 var question = true
+var maxmax = 0
 
 document.getElementById("quizbelt").src="./assets/images/"+degree+monkup+".png"
 
