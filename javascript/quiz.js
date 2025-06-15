@@ -17,7 +17,7 @@ const inArr = [
 ["Ap dro naeryo chagi ","Nedadgående spark med strakt ben.","Lige op og lige ned. Stræk foden ud på vej ned",10,10,"","Ap dro naeryo chagi","Ben"],
 ["Bakat chagi ","Udadgående spark med strakt ben.","",10,9,"","Bakat chagi","Ben"],
 ["An chagi ","Indadgående spark med strakt ben.","",10,8,"","An chagi","Ben"],
-["Ap chagi ","Front spark. Ram med fodballen.","",10,7,"","Ap chagi","Ben"],
+["Ap chagi ","Front spark. Ram med fodballen.","",10,7,"Ap chagi","Ap chagi","Ben"],
 ["Jumeok ","Knyttet hånd","",10,9,"","Jumeok","Teori"],
 ["Jireugi ","Slag fra hoften med knyttet hånd","",10,9,"","Jireugi","Teori"],
 ["Chagi ","Spark","",10,10,"","Chagi","Teori"],
