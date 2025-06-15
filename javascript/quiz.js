@@ -262,7 +262,7 @@ if (monkup == 'mon') {
 for (let i = 0; i < maxstep; i++) {
     
     if (parseInt(inArr[i][ArrCol]+'',10) == ArrLevel || (parseInt(inArr[i][ArrCol]+'',10) > ArrLevel && BeltOrAll == "All" )) {
-      if (Catagory == "All" || inArr[i][7] == Catagory) {
+      if (Catagory == "All" || inArr[i][8] == Catagory) {
             chooseArr.splice(i, 0, i)
         }
       }
@@ -299,8 +299,8 @@ function shuffle(array) {
   function startNextQ(){
     outputCounter()
     SvarButton = true;
-    if (inArr[chooseArr[step]][6]!="") {
-        var audio = new Audio('./assets/sound/'+inArr[chooseArr[step]][6]+'K'+'.mp4');
+    if (inArr[chooseArr[step]][7]!="") {
+        var audio = new Audio('./assets/sound/'+inArr[chooseArr[step]][7]+'K'+'.mp4');
         audio.play();
     }
 
@@ -337,12 +337,12 @@ function shuffle(array) {
       document.getElementById('displaySubText').innerHTML = inArr[chooseArr[step]][2]
 
       question = false
-      if (inArr[chooseArr[step]][6]!="") {
-        var audio = new Audio('./assets/sound/'+inArr[chooseArr[step]][6]+'DK'+'.mp4');
+      if (inArr[chooseArr[step]][7]!="") {
+        var audio = new Audio('./assets/sound/'+inArr[chooseArr[step]][7]+'DK'+'.mp4');
         audio.play();
     }
         if (inArr[chooseArr[step]][5]!="") {
-            document.getElementById("imgex").src='./assets/images/'+inArr[chooseArr[step]][5]+'.jpg'
+            document.getElementById("imgex").src='./assets/images/'+inArr[chooseArr[step]][5]+'.'+inArr[chooseArr[step]][6]
             document.getElementById("imgex").style.display = 'inline';
         } else {
             document.getElementById("imgex").style.display = 'none';
