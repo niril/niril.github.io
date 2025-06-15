@@ -9,7 +9,7 @@ img {
     margin-bottom: 1px;
   }
 .imgex {
-    height: 300px;
+    max-width: 100%
 }
   .button {
     border: none;
